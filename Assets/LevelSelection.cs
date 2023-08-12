@@ -17,6 +17,6 @@ public class LevelSelection : MonoBehaviour
 
 	void TaskOnClick()
     {
-		SceneManager.LoadScene(levelIndex + 1);
+		SceneManager.LoadScene(levelIndex + 2);
 	}
 }

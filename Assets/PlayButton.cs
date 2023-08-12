@@ -7,7 +7,7 @@ public class PlayButton : MonoBehaviour
 {
     public void PlayGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);        
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 3);        
     }
 
     public void NextLevel()
@@ -37,5 +37,10 @@ public class PlayButton : MonoBehaviour
     public void SelectLevelMenu()
     {
         SceneManager.LoadScene(1);
+    }
+
+    public void SelectSettings()
+    {
+        SceneManager.LoadScene(2);
     }
 }
