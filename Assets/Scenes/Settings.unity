@@ -958,7 +958,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1532240495}
+      - m_Target: {fileID: 1532240496}
         m_TargetAssemblyTypeName: PlayButton, Assembly-CSharp
         m_MethodName: BackToMenu
         m_Mode: 1
@@ -1626,6 +1626,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1532240494}
   - component: {fileID: 1532240495}
+  - component: {fileID: 1532240496}
   m_Layer: 5
   m_Name: Settings
   m_TagString: Untagged
@@ -1656,6 +1657,19 @@ RectTransform:
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1532240495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1532240493}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74c47eaf92c6d694ea11e3c04268d822, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dropdown: {fileID: 459247060}
+--- !u!114 &1532240496
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

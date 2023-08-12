@@ -9,6 +9,25 @@ public class Driver : MonoBehaviour
     [SerializeField] float slowSpeed = 12f;
     [SerializeField] float boostSpeed = 22f;
 
+    void Start()
+    {
+        int levDiff = PlayerPrefs.GetInt("LevelOfDifficulty", 0);
+        if(levDiff == 0)
+        {
+            steerSpeed -= 20f;
+            moveSpeed -= 2f;
+            slowSpeed -= 2f;
+            boostSpeed -= 5f;
+        }
+        else if(levDiff == 2)
+        {
+            steerSpeed += 20f;
+            moveSpeed += 2f;
+            slowSpeed += 2f;
+            boostSpeed += 5f;
+        }
+    }
+
     void Update()
     {
         float steerAmount = Input.GetAxis("Horizontal") * steerSpeed * Time.deltaTime;
